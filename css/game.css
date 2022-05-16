@@ -16,7 +16,6 @@
   border-radius: 25%;
 }
 
-/* game are logical coordinates*/
 #a1,
 #a2,
 #a3,
@@ -35,7 +34,6 @@
   margin: auto;
 }
 
-/* Reset Button */
 #reset {
   width: 95px;
   height: 40px;
@@ -55,7 +53,6 @@
   font-size: 20px;
 }
 
-/* Main Container */
 #gameMain {
   text-align: center;
   margin: auto;
