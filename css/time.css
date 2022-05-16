@@ -1,0 +1,21 @@
+.clock {
+    margin: auto;
+    background: olivedrab;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .clock-time,
+  .clock-ampm {
+    font-family:'Times New Roman', Times, serif;
+    font-size: px;
+    color: white;
+  }
+  
+  .clock-time {
+    font-size: 18px;
+    text-align: center;
+  }
+  

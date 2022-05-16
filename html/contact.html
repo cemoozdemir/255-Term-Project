@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/time.css" />
+    <title>CemBio</title>
+    <script src="/script/javascript.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="row">
+        <h1>Basic and well-known information of me</h1>
+      </div>
+      <div class="downRow"></div>
+      <div class="clock">
+        <span class="clock-time"></span>
+        <span class="clock-ampm"></span>
+      </div>
+      <script src="./main.js"></script>
+    </div>
+
+    <div class="navbar">
+      <a href="/html/first.html">Home</a>
+      <a href="/html/interests.html">Interests</a>
+      <a href="/html/game.html">Game Section</a>
+      <a href="/html/sports.html">Sports</a>
+      <a
+        href="/html/contact.html"
+        class="right"
+        style="background-color: #666; color: lightskyblue"
+        >Contact Me</a
+      >
+    </div>
+    <form>
+      <div class="contact">
+        Name Surname:
+        <input
+          type="text"
+          tabindex="5"
+          name="name"
+          id="name"
+          value="Name-Surname"
+          size="15"
+          maxlength="20"
+        />
+        <br />
+        Agree KVKK:
+        <input
+          type="checkbox"
+          name="AgreeKVKK"
+          id="Agreement"
+          tabindex="2"
+          required
+        />
+        <a href="/html/KVKK.html">Read to KVKK</a>
+        <br />
+        Gender:
+        <input type="radio" name="gender" value="m" checked tabindex="3" /> Male
+        <input type="radio" name="gender" value="f" /> Female
+        <br />
+        Your brief Information <br />
+        <textarea
+          tabindex="1"
+          name="message"
+          id="message"
+          cols="40"
+          rows="4"
+          maxlength="255"
+        >
+Fill here</textarea
+        >
+        <br />
+        <form>
+          Birth Date:
+          <input type="date" name="" id="date" />
+          <br />
+          E-Mail:
+          <input type="email" name="" id="mail" />
+          <br />
+          Photo of you
+          <input type="file" name="" id="" />
+          <br />
+          Cell-Phone Number
+          <input type="tel" />
+          <br />
+          <input type="submit" value="Click Here submit" />
+          <input type="reset" value="clear" />
+        </form>
+      </div>
+    </form>
+    <script src="/script/time.js"></script>
+  </body>
+</html>

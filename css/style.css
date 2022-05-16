@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: darkslategray;
+  color: aliceblue;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: olive;
+  top: 0;
+}
+
+.navbar a {
+  text-align: center;
+  padding: 14px 20px;
+  float: left;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+/* The link which is located on right */
+.navbar a.right {
+  float: right;
+}
+
+/* When mouse is on the selection tab */
+.navbar a:hover {
+  background-color: #666;
+  color: orange;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: lightskyblue;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header.downRow {
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+/* Displaying two column which are not same flexCreate two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 25%;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+.header.main {
+  flex: 75%;
+  background-color: black;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.interest {
+  background-color: rgb(192, 235, 252);
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+}
+
+.interest p {
+  text-align: center;
+}
+
+.interest img {
+  width: 75%;
+  height: 75%;
+}
+
+.contact {
+  width: 350px;
+  color: beige;
+  background-color: darkslategray;
+  text-align: center;
+  margin: auto;
+  border: 2px solid rgb(67, 128, 64);
+  border-radius: 10px;
+}
+
+.cardMain {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: antiquewhite;
+  font-size: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 400px;
+  min-width: 300px;
+}
+
+.card {
+  width: 350px;
+  background: radial-gradient(#111 40%, #000 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
+}
+
+.card:hover img {
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0.3;
+  width: 75%;
+  height: 75%;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: darkslategray;
+}
+
+.interest * {
+  z-index: 2;
+}
+
+.interest p {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.sports {
+  padding-top: 15px;
+  text-align: center;
+  margin: auto;
+}
+
+.sports p {
+  text-align: center;
+  margin: auto;
+  width: 700px;
+}
+
+.sports img {
+  width: 40%;
+  height: 40%;
+}
+
+/* When the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}

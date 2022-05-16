@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/time.css" />
+    <title>CemBio</title>
+    <script src="/script/javascript.js"></script>
+    <script src="/script/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="row">
+        <h1>Basic and well-known information of me</h1>
+      </div>
+      <div class="downRow"></div>
+      <div class="clock">
+        <span class="clock-time"></span>
+        <span class="clock-ampm"></span>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <a href="/html/first.html" class="active">Home</a>
+      <a href="/html/interests.html">Interests</a>
+      <a href="/html/game.html">Game Section</a>
+      <a href="/html/sports.html">Sports</a>
+      <a href="/html/contact.html" class="right">Contact Me</a>
+    </div>
+
+    <div class="row">
+      <div class="side">
+        <h2>Briefly About Me</h2>
+        <h5>Photo of me and my dog Ashe:</h5>
+        <div id="shadow" style="position: relative">
+          <img
+            src="/image/photoOfMe.jpeg"
+            style="width: 350px; height: 200"
+            id="imgShadow"
+          />
+          <p
+            style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 350px;
+              background: rgba(0, 0, 0, 0.7);
+              color: white;
+              display: none;
+              text-align: center;
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+            maiores.
+          </p>
+          <script>
+            document
+              .querySelector("#imgShadow")
+              .addEventListener("mouseenter", function () {
+                $("#shadow p").css("display", "initial");
+              });
+            document
+              .querySelector("#imgShadow")
+              .addEventListener("mouseleave", function () {
+                console.log("a");
+                $("#shadow p").css("display", "none");
+              });
+          </script>
+        </div>
+        <h3>I love the play Ashe in my leasure time</h3>
+      </div>
+      <div class="main">
+        <h2>TITLE HEADING</h2>
+        <h5>Camping, Feb 14, 2022</h5>
+        <img src="/image/hiking.jpeg" style="width: 400px; height: 300px" />
+        <p>
+          I would love to go to hiking with my loved ones, but Ashe is a must of
+          my trips
+        </p>
+        <br />
+        <h2>
+          If you want to join my trips you should fill a form which is located
+          in the navigation bar
+        </h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <img
+          src="/image/camping-kampcilik-nedir.jpeg"
+          style="width: 400px; height: 300px"
+        />
+        <p>
+          Sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Copyrights reserved</h2>
+    </div>
+    <script src="/script/time.js"></script>
+  </body>
+</html>

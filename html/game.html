@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/game.css" />
+    <link rel="stylesheet" href="/css/time.css" />
+    <title>CemBio</title>
+    <script src="/script/javascript.js"></script>
+    <script src="/script/gamescript.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="row">
+        <h1>Basic and well-known information of me</h1>
+      </div>
+      <div class="downRow"></div>
+      <div class="clock">
+        <span class="clock-time"></span>
+        <span class="clock-ampm"></span>
+      </div>
+      <script src="./main.js"></script>
+    </div>
+
+    <div class="navbar">
+      <a href="/html/first.html">Home</a>
+      <a href="/html/interests.html">Interests</a>
+      <a href="/html/game.html" class="active">Game Section</a>
+      <a href="/html/sports.html">Sports</a>
+      <a href="/html/contact.html" class="right">Contact Me</a>
+    </div>
+    <div id="gameMain">
+      <div>
+        <h3>Shooter Game</h3>
+        <div id="target">
+          <img
+            src="/image/640px-Target_Corporation_logo_(vector).svg.png"
+            style="width: 350px; height: 350px"
+          />
+          <script>
+            let i = 0;
+            document.querySelector("#target").addEventListener("click", (e) => {
+              const el = document.createElement("img");
+              el.style.position = "absolute";
+              el.style.width = "10px";
+              el.style.height = "10px";
+              el.style.left = e.pageX + "px";
+              el.style.top = e.pageY + "px";
+              el.style.transform = "translate(-50%, -50%)";
+              el.style.background =
+                "url(/image/clipart-bullet-holes-png-download-unity-3d-bullet-hole-11562921515pzdkwwuxnm.png)";
+              el.style.backgroundSize = "contain";
+              document.querySelector("#target").appendChild(el);
+              i += 10;
+              document.getElementById("i").innerHTML = i;
+            });
+          </script>
+          <div class="id" id="i">Counter</div>
+        </div>
+      </div>
+      <h1 id="gameHeader">X-O-X</h1>
+      <p>
+        X is refers to first player, and Y is refers to second player <br />
+        Have fun 🙂
+      </p>
+      <br />
+      <!-- Axis a -->
+      <input type="text" id="a1" onclick="xox_3(); xox();" readonly />
+
+      <input type="text" id="a2" onclick="xox_4(); xox();" readonly />
+
+      <input type="text" id="a3" onclick="xox_5(); xox();" readonly />
+      <br />
+      <!-- Axis b -->
+
+      <input type="text" id="b1" onclick="xox_6(); xox();" readonly />
+
+      <input type="text" id="b2" onclick="xox_7(); xox();" readonly />
+
+      <input type="text" id="b3" onclick="xox_8(); xox();" readonly />
+      <br />
+      <!-- Axis c -->
+
+      <input type="text" id="c1" onclick="xox_9(); xox();" readonly />
+
+      <input type="text" id="c2" onclick="xox_10();xox();" readonly />
+
+      <input type="text" id="c3" onclick="xox_11();xox();" readonly />
+      <br /><br />
+      <button id="reset" onclick="xox_rStart()">RESET</button>
+      <br />
+      <p id="showTurn"></p>
+    </div>
+    <div class="footer">
+      <h2>Copyrights reserved</h2>
+    </div>
+    <script src="/script/time.js"></script>
+  </body>
+</html>
